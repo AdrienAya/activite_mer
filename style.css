@@ -1,0 +1,443 @@
+body{
+
+    margin-top: 0;
+    margin-left: 0;
+
+    max-width: 100vw;
+    max-height: 100vh;
+    
+    
+    
+    }
+    
+/******************************* HEADER *****************************/
+
+/*** search ***/
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+/*** search ***/
+
+    h1{
+        color: rgb(161, 0, 0);
+    }
+    
+    header{
+    
+    height: 600px;
+    background-image: url(image/randonnée.jpg);
+    
+    background-size: cover;
+    font-family:'Fira Sans Condensed', sans-serif;
+    overflow-y: hidden;
+        
+    }
+    
+    #logo{
+    
+    position: absolute;
+    transform: scale(0.12);
+    top: -26em;
+    right: -22em;
+    
+    }
+    
+    #navbar{
+      position: absolute;
+      margin-left: -25px;
+      height: 60px;
+      width:35em;
+      background:#424242;
+      top: 5%;
+     
+    }
+    
+    
+     #nav_mobile{
+         visibility: hidden;
+        z-index: -10;
+        position: fixed;
+        top: 2%;
+        width: 70px;
+        height: 50px;
+        max-height: 100%;
+        cursor: pointer;
+        
+    }
+    
+    
+    #nav_mobile span{
+        position: absolute;
+        left: 5%;
+        width: 40px;
+        height: 6px;
+        background: black;
+        z-index: 50;
+        
+        
+    }
+    
+    #nav_mobile span:nth-child(1){
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 40px;
+        height: 6px;
+        background: black;
+        z-index: 50;
+        
+        
+    }
+    
+    #nav_mobile span:nth-child(2){
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        width: 40px;
+        height: 6px;
+        background: black;
+        z-index: 50;
+        
+        
+    }
+    
+    ul{
+        
+        display: flex;
+        padding-left: 40px;
+        padding-top: 14px;
+       
+        
+    }
+    
+    li{
+    
+     font-size: 20px;   
+     color: white;
+     align-items: center;
+     margin-right: 15px;
+     margin-left: 15px; 
+     list-style: none;  
+     cursor: pointer;
+    
+    }
+    
+    #intro{
+    
+        position: relative; 
+        padding:25px;
+        background-color: rgba(236, 236, 236, 0.425);
+        align-items: center;
+        top: 30%;
+        display: flex;
+        height: 19em;
+    }
+    #intro h2{
+        
+        position: absolute;
+        top: 5%;
+        right: 20%;
+    
+    }
+    
+    #intro p{
+    
+        font-weight: bold;
+    }
+    #intro button{
+        font-size: 14px;
+      position: absolute;
+      background: transparent;
+        width: 150px;
+        height: 35px;
+        bottom: 10%;
+        right: 10%;
+    }
+    
+    Header h5{
+    
+        position: relative;
+        bottom: -205px;
+        font-size: 600%;
+        font-weight: bold;
+        color: white;
+        letter-spacing: .07em;
+    }
+    
+/******************************* HEADER *****************************/
+
+/**************** MAIN-CONTENT **************************************/
+
+#main-content{
+
+    background-image: url(image/pexels-pixabay-210205.jpg);   
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    height: 600px;
+
+   
+}
+
+
+
+.pic1{
+
+padding: 1% 1%;
+max-width: 100%;
+max-height: 100%;
+margin: 0px 10px ;    
+width: 500px;
+height: 19em;
+background-color: rgba(236, 236, 236, 0.356);
+cursor: pointer;
+overflow: hidden;
+transition:all 0.6s;
+
+
+}
+
+.pic1 h3{
+
+display: block;
+position: relative;
+color: white;
+z-index: 50;
+top: -55%;
+margin-left: 100px;
+margin-right: 100px;
+text-align: center;
+font-family:'Fira Sans Condensed', sans-serif;
+border: 3px solid white;
+background-color: rgba(0, 0, 0, 0.568);
+transition: 0.6s;
+transform: scale(0.95);
+
+}
+
+ 
+#part1{
+
+padding-left: 40px;
+padding-right: 5em;
+width: 95vw;
+margin-bottom: 50px;
+height: 22em;
+display: flex;
+flex-direction: row;
+transition:all 0.6s;
+
+}
+
+#part2{
+padding-right: 5em;
+padding-left: 40px;
+width: 95vw;
+margin-bottom: 100px;
+height: 22em;
+display: flex;
+flex-direction: row;
+transition:all 0.5s;
+
+}
+
+.img_cover{
+
+    max-width: 100%;
+    max-height:100% ;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/rando.jpg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    
+    
+}
+
+#p1{
+
+transition: 0.5s;
+
+}
+
+
+
+.buttonA{
+   
+    position: absolute;
+    width: 15%;
+    top: 55em;
+    margin-left: 5.5%;
+    z-index: 150;
+
+}
+
+/*******************  PHP ******************/
+
+label{
+    color:white;
+}
+
+select{
+   
+    margin: 50px 0px;
+    padding: 20px;
+
+}
+
+#villed{
+
+    margin: 20px 0px;
+
+}
+#typed{
+   
+    margin: 20px 0px;
+}
+
+#natured{
+    margin: 20px 0px;   
+}
+
+#titre_article{
+    
+    text-align: center;
+}
+
+#titre_article h3{
+    
+    color: white;
+    font-size: 40px;
+}
+
+#texte_article p {
+
+    color: white;
+}
+
+#empty{
+
+width: 100%;
+height: 100%;
+display: grid;
+align-content: center;
+text-align: center;
+
+}
+
+#empty h4{
+    font-size: 50px;
+    color: white;
+}
+
+#image_article{
+
+    width: 30%;
+    height: 48.5%;
+    overflow: hidden;
+
+}
+
+#image_article img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/*******************  PHP ******************/
+#selec{
+
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.473);
+
+}
+
+#texte_article{
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+#t1{
+    position: relative;
+    left: -10px;
+    z-index: -500;
+    transition: 0.5s;
+    opacity: 0;
+    width: 100%;
+  height: 550px;
+  cursor: auto;
+
+}
+
+#t1 h3{
+
+visibility: hidden;
+}
+
+#t1 img{ 
+    transform: scale(1.10);
+}
+
+
+/**************** MAIN-CONTENT **************************************/
+
+
+
+ /* FOOTER  */
+ 
+.footer {
+    
+   
+    width: 100%;
+    background-color: #1F1A17;
+    opacity:0.80;
+    
+  }
+   
+  .title {
+    color: #0F8581;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 40px 10px 10px 10px;
+  }
+   
+  .reseaux-sociaux {
+    justify-content: space-between;
+    margin: 20px 10px 10px 10px;
+    text-align: center;
+    
+  }
+   
+  .reseaux-sociaux img {
+    width: 8%;
+    margin: auto;
+  }
+   
+  .img-fluid{
+    width: 50px;
+    margin-right: 0px;
+    margin-left: 190px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+
+  /* END FOOTER */
