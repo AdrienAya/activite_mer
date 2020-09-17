@@ -10,7 +10,7 @@ $id=$_SESSION['auth']->id;
 $article = array($_POST['ville'],$_POST['type'],$_POST['nature'],$_POST['titre'],$_POST['contenue_text'],);
 $req = "INSERT INTO article_users (titre,ville,nature,type,id_users,validé,text_article,date_edition)
 VALUES
-('$article[3]','$article[0]','$article[2]','$article[1]','$id',0,'$article[4]',NOW())";
+('$article[3]','$article[0]','$article[2]','$article[1]','$id',1,'$article[4]',NOW())";
 
 }
 

@@ -141,13 +141,29 @@ if(isset($check)){
        <textarea  required id='contenue_text' name='contenue_text' placeholder='Contenue de l article' class='col-lg-12 col-md-12 col-sm-12 col-12' rows='12' ></textarea>";
        }
       
-       
+       if(isset($check)){
+        
+        echo  "</div>
+
+        <button type='submit'class='btn-light'>Envoyer</button>
+        <button type='submit'class='btn-light'>Ecrire un article</button>
+      </div>
+         <br><br>";
+
+       }
+
+       else{
       echo  "</div>
+
+    
       <button type='submit'class='btn-light' >Envoyer</button>
     </div>
-       <br><br>
-    <div id='espace_article_users' class='col-lg-5 col-md-5 col-sm-5 col-5'>
+       <br><br>";
+       }
+    echo "<div id='espace_article_users' class='col-lg-5 col-md-5 col-sm-5 col-5'>
      ";   foreach ($user as $row) {
+
+      if($row->validé==1 or $row->validé==2){
         $titre = $row->titre;
         $id_article = $row->id_article;
         $uptade=false;
@@ -155,7 +171,7 @@ if(isset($check)){
              echo "<div class='article_users'>" .$titre. ":<div class='edit_suppr'><a href='delet_edit.php?id=$id_article'> supprimer </a><span>/</span><a href='edit.php?id=$id_article&titre=$titre&text=$text'> edit</a></div><br>";
             
              echo "<p>" .$text. "</p></div>";
-            if($row->validé  ===  '0' ){
+            if($row->validé  ===  '1'  or $row->validé  ===  '2' ){
              echo "<h5 style='color:white;background:black;width:80px;padding:5px;text-align:center';>En attente</h5>";
             }
              else{
@@ -163,6 +179,7 @@ if(isset($check)){
                 echo "<h5 style='color:white;background:black;width:80px;padding:5px;text-align:center'; >Article validé</h5>";
              }
             }
+          }
      }
   
 
