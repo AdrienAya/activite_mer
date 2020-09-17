@@ -43,6 +43,9 @@
 
 <?php
 
+
+
+
 if(!empty($_POST)){
 
 $ville=$_POST['ville'];
@@ -54,6 +57,7 @@ $req = $pdo->query($test);
 
 
 $resultat= $req->fetch();
+
 if(empty($resultat->nature_activite )){
 
     $article_empty="Pas d'article correspondant";

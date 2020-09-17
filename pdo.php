@@ -22,7 +22,7 @@ try {
     }
      catch (PDOException $exception){
       
- mail('balbunho@gmail.com', 'PDOException', $exception->getMessage());
+ mail('', 'PDOException', $exception->getMessage());
     exit('Erreur de connexion à la base de données');
 
   }

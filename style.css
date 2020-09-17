@@ -10,7 +10,43 @@ body{
     
     }
     
+
+
+
+
+
 /******************************* HEADER *****************************/
+
+
+/***** inscription *******/
+
+
+#signinUp{
+
+position: absolute;
+right: 180px;
+top: 50px;
+
+
+
+}
+
+#signinUp li{
+
+color: black;
+
+}
+
+
+
+
+
+/***** inscription *******/
+
+
+
+
+
 
 /*** search ***/
 
@@ -181,11 +217,89 @@ label {
     background-image: url(image/pexels-pixabay-210205.jpg);   
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 50px;
     height: 600px;
+   
+}
+
+form{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+#titre_article{
+    margin-left: 50px;
+    margin-top: 22px;
+    height: 30px;
+    resize : none;
+    border-radius: 5px;
+
+}
+
+#selec_form{
+width: 60%;
+background-color: rgba(148, 148, 148, 0.96);
+height: 500px;
+padding: 30px;
+border-radius: 5px;
+opacity: 0.80;
+margin-right: 20px;
+box-shadow: 1px 1px 5px black;
+
+
+
+}
+
+.article_users{
+
+    overflow-x: hidden;
+  width: 350px;  
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.796);
+margin: 10px 0px 10px 0px;
+border-radius: 5px;
+padding: 5px;
+overflow-wrap: break-word;
+box-shadow: 1px 1px 5px black;
+
+}
+
+.article_users p{
 
    
+width: 350px;
+}
+
+#espace_article_users{
+  
+overflow-Y: scroll;
+
+}
+
+.edit_suppr{
+
+margin-left: 200px;
+
+}
+
+
+#contenue_text{
+    resize : none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+form select{
+
+margin: 20px;
+
 }
 
 
@@ -198,7 +312,7 @@ max-height: 100%;
 margin: 0px 10px ;    
 width: 500px;
 height: 19em;
-background-color: rgba(236, 236, 236, 0.356);
+background-color: rgba(0, 0, 0, 0.781)
 cursor: pointer;
 overflow: hidden;
 transition:all 0.6s;
@@ -308,6 +422,12 @@ select{
 
 #natured{
     margin: 20px 0px;   
+}
+
+#contenue_text{
+
+
+
 }
 
 #titre_article{
@@ -441,3 +561,20 @@ visibility: hidden;
 
 
   /* END FOOTER */
+
+#selec2{
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 50px;
+}
+
+#main-content2{
+    background-image: url(image/pexels-pixabay-210205.jpg);   
+    background-size: cover;
+   width: 100%;
+    padding: 50px;
+    height:100vh;
+
+}
